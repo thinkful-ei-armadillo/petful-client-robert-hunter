@@ -1,0 +1,20 @@
+.AdoptionPageInfo {
+  display: flex;
+  margin: 40px;
+  min-height: calc(100vh - 80px);
+}
+
+footer {
+  display: block;
+  position: fixed;
+  top: 45px;
+  left: 45px;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+}
+
+a {
+  color: white;
+}

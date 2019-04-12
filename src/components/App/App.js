@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import MainPage from "../../routes/MainPage/MainPage";
-import AdoptionPage from "../../routes/AdoptionPage/AdoptionPage"
+import AdoptionPage from "../../routes/AdoptionPage/AdoptionPage";
+import LabelUser from "../../routes/LabelUser/LabelUser";
+import adoptedDogList from "../../routes/AdoptedDogs/AdoptedDogs";
+import adoptedCatList from "../../routes/AdoptedCats/AdoptedCats";
 import "./App.css";
 
 class App extends Component {
@@ -18,7 +21,30 @@ class App extends Component {
         </header>
         <main className="App-main">
           <Route exact path={"/"} component={MainPage} className="MainPage" />
-          <Route exact path={"/adoptionPage"} component={AdoptionPage} className="AdoptionPage" />
+          <Route
+            exact
+            path={"/adoptionPage"}
+            component={AdoptionPage}
+            className="AdoptionPage"
+          />
+          <Route
+            exact
+            path={"/createDisplayName"}
+            component={LabelUser}
+            className="LabelUserPage"
+          />
+          <Route
+            exact
+            path={"/adoptedDogList"}
+            component={adoptedDogList}
+            className="adoptedDogListPage"
+          />
+          <Route
+            exact
+            path={"/adoptedCatList"}
+            component={adoptedCatList}
+            className="adoptedCatListPage"
+          />
         </main>
       </div>
     );

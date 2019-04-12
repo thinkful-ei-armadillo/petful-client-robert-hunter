@@ -1,5 +1,3 @@
-'use strict';
-
 class _Node {
   constructor(value) {
     this.value = value;
@@ -52,27 +50,5 @@ export default class Queue {
       return null;
     }
     return this.first.value;
-  }
-}
-
-function peek(starTrekQ) {
-  if (starTrekQ.first === null) {
-    return null;
-  }
-  return starTrekQ.first.value;
-}
-
-function isEmpty(starTrekQ) {
-  if (starTrekQ.first === null) {
-    return true;
-  }
-  return false;
-}
-
-function display(starTrekQ) {
-  let node = starTrekQ.first;
-  while (node !== null) {
-    console.log(node.value);
-    node = node.next;
   }
 }

@@ -1,0 +1,11 @@
+.catImageContainer {
+  margin: auto;
+  width: 400px;
+  height: 200px;
+}
+
+.catImageContainer img {
+  margin: auto;
+  height: 100%;
+  border-radius: 20%;
+}

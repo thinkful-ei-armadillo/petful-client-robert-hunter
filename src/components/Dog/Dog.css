@@ -1,0 +1,11 @@
+.dogImageContainer {
+  margin: auto;
+  width: 400px;
+  height: 200px;
+}
+
+.dogImageContainer img {
+  margin: auto;
+  height: 100%;
+  border-radius: 20%;
+}
