@@ -1,0 +1,22 @@
+.MainPageInfo {
+  text-align: center;
+}
+
+.LinkToAdoptionPage {
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  border-width: 100px;
+  width: 50%;
+  padding: 10px;
+  border: 2px black solid;
+  background: white;
+  color: red;
+}
+
+@media screen and (min-width: 440px) {
+  .MainParagraph {
+    display: initial;
+  }
+}
