@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
-import MainPage from "./routes/MainPage/MainPage";
+import MainPage from "../../routes/MainPage/MainPage";
+import AdoptionPage from "../../routes/AdoptionPage/AdoptionPage"
 import "./App.css";
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
         </header>
         <main className="App-main">
           <Route exact path={"/"} component={MainPage} className="MainPage" />
+          <Route exact path={"/adoptionPage"} component={AdoptionPage} className="AdoptionPage" />
         </main>
       </div>
     );
