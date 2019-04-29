@@ -14,7 +14,7 @@ class CatList extends Component {
     };
   }
   getCats() {
-    return fetch("http://localhost:8080/api/cat").then(res =>
+    return fetch("https://calm-springs-97882.herokuapp.com/api/cat").then(res =>
       !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
     );
   }

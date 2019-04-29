@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "alias": "petful-app",
+  "name": "petful-app",
+  "routes": [
+    {
+      "src": "^/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": ".*",
+      "dest": "/index.html"
+    }
+  ]
+}

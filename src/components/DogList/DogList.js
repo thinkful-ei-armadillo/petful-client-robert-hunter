@@ -14,7 +14,7 @@ class DogList extends Component {
     };
   }
   getDogs() {
-    return fetch("http://localhost:8080/api/dog").then(res =>
+    return fetch("https://calm-springs-97882.herokuapp.com/api/dog").then(res =>
       !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
     );
   }
