@@ -13,6 +13,7 @@ class CatList extends Component {
       catQueue: null
     };
   }
+  // http://localhost:8000/api/cat
   getCats() {
     return fetch("https://calm-springs-97882.herokuapp.com/api/cat").then(res =>
       !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
@@ -21,6 +22,7 @@ class CatList extends Component {
 
   makeCatQueue(catArray) {
     let catQueue = new Queue();
+    // eslint-disable-next-line array-callback-return
     catArray.map(cat => {
       if (!cat.adopted) {
         catQueue.enqueue(cat);

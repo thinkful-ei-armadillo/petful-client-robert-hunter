@@ -13,6 +13,7 @@ class DogList extends Component {
       dogQueue: null
     };
   }
+  // http://localhost:8000/api/dog
   getDogs() {
     return fetch("https://calm-springs-97882.herokuapp.com/api/dog").then(res =>
       !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
@@ -21,6 +22,7 @@ class DogList extends Component {
 
   makeDogQueue(dogArray) {
     let dogQueue = new Queue();
+    // eslint-disable-next-line array-callback-return
     dogArray.map(dog => {
       if (!dog.adopted) {
         dogQueue.enqueue(dog);
